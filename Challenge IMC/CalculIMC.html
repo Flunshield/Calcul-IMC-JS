@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +9,32 @@
     <script src="test.js" async> </script>
     <title>Calcul IMC + changement backGround</title>
 </head>
+
 <body>
     <fieldset>
         <legend>Calculez votre IMC</legend>
-    <form name ="form1" id="calculIMC" action="test.js" method="get">
-        <div>
-            <input type="radio" name="sexe" value="sexe" class="sexe" /> <label for="homme">Homme</label>
-        <input type="radio" name="sexe" value="sexe" class="sexe" /> <label for="femme">Femme</label>
+        <form name="form1" id="calculIMC" action="test.js" method="get">
+            <div>
+                <input type="radio" name="sexe" value="sexe" class="sexe" /> <label for="homme">Homme</label>
+                <input type="radio" name="sexe" value="sexe" class="sexe" /> <label for="femme">Femme</label>
+            </div>
+            <div>
+                <label>Votre taille (en m) :</label>
+                <input type="number" name="taille" id="taille">
+            </div>
+            <div>
+                <label>Votre poids (en kg) :</label>
+                <input type="number" id="poids" name="poids">
+            </div>
+        </form>
+        <button onclick="IMC();"> Calculez</button>
+        <div id="input1">
+            <p>Remplissez le formulaire et cliquer sur le bouton</p>
         </div>
-        <div>
-            <label>Votre taille (en m) :</label>
-            <input type="number" name="taille" id="taille">
-        </div>
-        <div>
-            <label>Votre poids (en kg) :</label>
-            <input type="number" id="poids" name="poids">
-        </div>
-    </form> 
-    
-    <button onclick="IMC();"> Calculez</button>
-    
-<div id="input1">
-<p>Remplissez le formulaire et cliquer sur le bouton</p>
-</div>
-
-
-<label>Entrez votre code couleur</label>
-<input type="text" id="couleur" name="couleur" placeholder="Ex : #953824">
-
-<button onclick = "changeColor();">Changement de la couleur</button>
-
+        <label>Entrez votre code couleur</label>
+        <input type="text" id="couleur" name="couleur" placeholder="Ex : #953824">
+        <button onclick="changeColor();">Changement de la couleur</button>
     </fieldset>
-
 </body>
+
 </html>
